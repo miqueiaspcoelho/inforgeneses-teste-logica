@@ -29,14 +29,17 @@ def fib(n: int)-> int:
             a0 = a1 
             a1 = proximo
             sequencia_calculada.append(proximo)
-        for n in sequencia_calculada:
-            print(n)
     elif n==2:
-        for n in sequencia_calculada:
-            print(n)
+        sequencia_calculada = [0,1]
     elif n==1:
-        print(sequencia_calculada[0])
+        sequencia_calculada = [0]
     else:
-        print('Entrada inválida')
-
-fib(40)
+        sequencia_calculada = []
+    
+    return sequencia_calculada
+    
+def main():
+    sequencia_fibonacci = fib(40)
+    for n in sequencia_fibonacci:
+        print(n)
+main()
